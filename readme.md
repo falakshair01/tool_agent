@@ -10,18 +10,18 @@ It demonstrates:
 ## Project Structure
 ```
 tool_agent/
-├── main.py
-├── requirements.txt
 └── app/
-├── init.py
-├── schemas.py
-├── intent_recognizer.py
-├── tool_manager.py
-└── tools/
-├── init.py
-├── calculator.py
-├── time_query.py
-└── weather_query.py
+    ├── main.py
+    ├── requirements.txt
+    ├── init.py
+    ├── schemas.py
+    ├── intent_recognizer.py
+    ├── tool_manager.py
+    └── tools/
+        ├── init.py
+        ├── calculator.py
+        ├── time_query.py
+        └── weather_query.py
 ```
 
 ## Setup
@@ -52,11 +52,6 @@ Weather:
 ```json
 { "query": "What's the weather in Paris?" }
 ```
-
-### Extending
-- Add a new tool class under app/tools/
-- Register it in app/tool_manager.py
-- Add detection rules in app/intent_recognizer.py
 
 ### Notes
 
